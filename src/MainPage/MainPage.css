@@ -1,0 +1,38 @@
+@import '~antd/dist/antd.css';
+.MainPage {
+    z-index: 1;
+    background: rgb(255, 255, 255);
+    display: block;
+    overflow: auto;
+    height: 100%;
+    min-height: 100%;
+  }
+
+.outer {
+    z-index: 1;
+    background: rgb(201, 76, 76);
+    height: 100%;
+    min-height: 100%;
+}
+
+body {background-color: rgb(201, 76, 76);}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(201, 76, 76);;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: lightgrey;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 10px solid lightgrey;  /* creates padding around scroll thumb */
+  }
+
+  /* For firefox */
+  * {
+    scrollbar-width: 20px;
+    scrollbar-color: lightgrey rgb(201, 76, 76);
+  }
